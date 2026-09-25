@@ -2,8 +2,8 @@ name: update
 
 on:
   schedule:
-    # 05:30 Kyiv in summer, 04:30 in winter.
-    - cron: '30 2 * * *'
+    # Twice a day: 05:30 and 17:30 Kyiv in summer, 04:30 and 16:30 in winter.
+    - cron: '30 2,14 * * *'
   workflow_dispatch:
 
 permissions:
